@@ -11,3 +11,4 @@
 在 commit log 信件中，於信件內容任意處 double click 觸發
 
 ## Screenshot
+![low pass](https://github.com/kylinfish/MailViewer/blob/master/screenshot.png)
