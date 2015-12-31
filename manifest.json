@@ -1,0 +1,18 @@
+{
+  "name": "PixViewer",
+  "short_name": "pixV",
+  "version": "1",
+  "description": "幫你的 commit log 信上色",
+  "permissions": [
+    "https://mail.google.com/mail/*",
+    "tabs",
+    "activeTab"
+  ],
+  "content_scripts": [
+      {
+          "matches": ["https://mail.google.com/mail/*"],
+          "js": ["jquery.js","popup.js"]
+      }
+  ],
+  "manifest_version": 2
+}
