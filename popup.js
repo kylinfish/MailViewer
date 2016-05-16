@@ -1,5 +1,19 @@
 (function($) {
   $(document).on('dblclick', 'table', fillcolor);
+    $(document).on('keydown', function(e) {
+        switch(e.keyCode) {
+            case 37: // left
+                $('.iG.J-J5-Ji > div.h0 > div:nth-child(2)').click();
+                break;
+            case 39: // right
+                $('.iG.J-J5-Ji > div.h0 > div:nth-child(3)').click();
+                break;
+        }
+
+        setTimeout(function(){
+            fillcolor();
+        }, 550);
+    });
 })(jQuery);
 
 function fillcolor() {
