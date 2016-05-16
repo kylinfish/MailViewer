@@ -9,9 +9,9 @@ function fillcolor() {
   for (var i = 0; i <= lines.length; i++) {
     if (lines[i] === undefined) break;
     if (lines[i].charAt(0) == '+') {
-      lines[i] = '<span style=\'background-color: #d0ffd0;\'>' + lines[i] + '</span>';
+      lines[i] = '<div style=\'background-color: #d0ffd0; width: 100%;\'>' + lines[i] + '</div>';
     } else if (lines[i].charAt(0) == '-') {
-      lines[i] = '<span style=\'background-color: #ffd0d0;\'>' + lines[i] + '</span>';
+      lines[i] = '<div style=\'background-color: #ffd0d0; width: 100%;\'>' + lines[i] + '</div>';
     }
     newBody += lines[i];
   }
